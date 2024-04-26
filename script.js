@@ -7,7 +7,7 @@ var regForm=document.getElementById('regForm');
 var indicator=document.getElementById('indicator');
 
 menuitems.style.maxHeight="0px"
-
+//menu fuction and submenu
 function menutoggle() {
     var menuitems = document.getElementById('menuitems');
     var submenu = document.querySelector('.submenu');
