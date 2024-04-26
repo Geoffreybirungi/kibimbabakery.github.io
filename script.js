@@ -8,14 +8,19 @@ var indicator=document.getElementById('indicator');
 
 menuitems.style.maxHeight="0px"
 
-function menutoggle(){
-    if(menuitems.style.maxHeight=="0px"){
-        menuitems.style.maxHeight="200px"
-         myrow.style.marginTop="170px" //  -----for not collapsing after navbarscroll----
-    }
-    else{
-        menuitems.style.maxHeight="0px"
-        myrow.style.marginTop="0px"
+function menutoggle() {
+    var menuitems = document.getElementById('menuitems');
+    var submenu = document.querySelector('.submenu');
+    var myrow = document.getElementById('myrow');
+
+    if (menuitems.style.maxHeight === '0px') {
+        menuitems.style.maxHeight = '200px';
+        myrow.style.marginTop = '170px';
+        submenu.style.display = 'block'; // Show the submenu
+    } else {
+        menuitems.style.maxHeight = '0px';
+        myrow.style.marginTop = '0px';
+        submenu.style.display = 'none'; // Hide the submenu
     }
 }
 
