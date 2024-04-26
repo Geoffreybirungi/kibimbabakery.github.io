@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kibimba Bakery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="images/KBlogo.PNG" type="image/png">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"> <img src="images/KBlogo.PNG" alt="" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="menuitems">
+                        <li> <a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+
+                        <li class="has-submenu"><a href="about.html" onclick="toggleMenu()">About</a>
+                            <ul class="submenu">
+                                <li><a href="#menu" onclick="toggleMenu()">Menu</a></li>
+                                <li><a href="#expert" onclick="toggleMenu()">Expert</a></li>
+                                <li><a href="#testimonials" onclick="toggleMenu()">Testimonials</a></li>
+                                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="signin.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"> <img src="images/cart.png" alt="ye cart hai" height="30px" width="30px"></a>
+                <img src="images/menu.png" class="menu-icon" alt="" onclick="menutoggle()">
+            </div>
+
+
+
+
+
+<!-- --------contact page------ -->
+
+<div class="account-page" id="myrow">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/baked products1.PNG" alt="" width="100%">
+            </div>
+            <div class="col-2">
+              <div class="form-container">
+                  <div class="form-btn">
+                      <h4>Contact Us</h4>
+                      <hr style=" width: 100px; background: #ff523b; height: 3px; border: none;">
+                  </div>
+
+                  <form action="" id="">
+                    <input type="text" placeholder="Your Name">
+                    <input type="email" placeholder="Email">
+                    <input type="area" placeholder="subject">
+                    <textarea name="" id="" cols="30" rows="3" placeholder="Explain..."></textarea>
+                    <button type="submit" class="btn">Send</button>
+
+                </form>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+   
+   <!--Footer-->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Location</h3>
+                <p>Kibimba Bakery, situated in Kibimba trading center 2km away from Fort Portal Tourism City in the North Division, has been serving the community since its commencement in 2016. </p>
+                
+            </div>
+            <div class="footer-col-2">
+                <img src="images/KBlogo.PNG" alt="">
+                <p>Our purpose to make you satisfied</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li> <a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="contact.html">contact us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#" target="_blank"><img src="images/icons8-facebook-45.png" alt=""></a></li>
+                    <li><a href="#" target="_blank"><img src="images/icons8-instagram-45.png" alt=""></a></li>
+                    <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="images/icons8-twitter-40.png" alt=""></a></li>
+                    <li><a href="#" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright-2024-Kibimba abkery All Rights Reserved</p>
+        <p>Designed by <a href="geobacodes24@gmail.com" style="color: blue;"> Geoffrey Birungi </a></p>
+     </div>
+</div>
+</body>
+<!--JavaScript-->
+<script src="script.js"></script>
+
+</html>

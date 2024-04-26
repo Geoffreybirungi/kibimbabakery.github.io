@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kibimba Bakery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="images/KBlogo.PNG" type="image/png">
+</head>
+
+<body style="background-color: rgb(252, 116, 66);">
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"> <img src="images/KBlogo.PNG" alt="" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="menuitems">
+                        <li> <a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+
+                        <li class="has-submenu"><a href="about.html" onclick="toggleMenu()">About</a>
+                            <ul class="submenu">
+                                <li><a href="#menu" onclick="toggleMenu()">products</a></li>
+                                <li><a href="#expert" onclick="toggleMenu()">Expert</a></li>
+                                <li><a href="#testimonials" onclick="toggleMenu()">Testimonials</a></li>
+                                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="signin.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"> <img src="images/cart.png" alt="ye cart hai" height="30px" width="30px"></a>
+                <img src="images/menu.png" class="menu-icon" alt="" onclick="menutoggle()">
+            </div>
+
+
+
+<!-- <p>about us</p>
+ -->
+    
+
+
+
+	<section class="about" id="about">
+		<div class="row">
+			<div class="col50">
+				<h2 class="titleText"><span>A</span>bout Us</h2>
+				<p>
+					Kibimba Bakery is dedicated to providing high-quality baked goods that are crafted with the finest ingredients. We aim to create delightful experiences for our customers, offering a wide range of delicious treats that cater to every palate.
+					<br><br>
+					Our team of expert bakers is passionate about their craft, ensuring that each item is baked to perfection. Whether you're craving pastries, bread, cakes, or cookies, Kibimba Bakery has something special to offer.
+				</p>
+			</div>
+
+			<div class="col50">
+				<div class="imgBx">
+					<img src="images/baked products1.PNG" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+             
+           <section class="menu" id="menu">
+		<div class="title">
+			<h2 class="titleText">Our <span>P</span>roducts</h2>
+
+			
+			<p>
+			    Explore our delectable <menu></menu> filled with a variety of mouthwatering baked goods.
+		    </p>
+
+			
+<!-- Button to take back to home page -->
+
+<button class="button" onclick="window.location.href='index.html'">Home</button>
+		
+<!-- Button to take back to about page -->
+<button class="button" onclick="window.location.href='about.html'">Top</button>
+			
+		</div>
+
+
+
+		<div class="content" style="width: 100%;">
+			<div class="box">
+				<div class="imgBx">
+					<img src="images/pumpkin bread3.PNG" alt="">
+				</div>
+				<div class="text">
+					<h3>Special Breads</h3>
+				</div>
+			</div>
+			<div class="box">
+				<div class="imgBx">
+					<img src="images/baked products1.PNG" alt="" style="">
+				</div>
+				<div class="text">
+					<h3>Delicious Pastries</h3>
+				</div>
+			</div>
+			<div class="box">
+				<div class="imgBx">
+					<img src="images/customcakes2.PNG" alt="">
+				</div>
+				<div class="text">
+					<h3>Decadent Cakes</h3>
+				</div>
+			</div>
+			<div class="box">
+				<div class="imgBx">
+					<img src="images/4.PNG" alt="">
+				</div>
+				<div class="text">
+					<h3>Scrumptious Cookies</h3>
+				</div>
+			</div>
+			<div class="box">
+				<div class="imgBx">
+					<img src="images/13.PNG" alt="">
+				</div>
+				<div class="text">
+					<h3>Flavorful Muffins</h3>
+				</div>
+			</div>
+			<div class="box">
+				<div class="imgBx">
+					<img src="images/7.PNG" alt="">
+				</div>
+				<div class="text">
+					<h3>Tempting Pies</h3>
+				</div></div>
+			</div>
+		</div>
+	</section>
+
+	
+		<!-- Button to take back to home page -->
+
+		<button class="button" onclick="window.location.href='index.html'">Home</button>
+		
+<!-- Button to take back to about page -->
+<button class="button" onclick="window.location.href='about.html'">Top</button>
+ <!-- <section class="expert" id="expert"> -->
+	<section class="expert" id="expert">
+		<div class="title white">
+			<h2 class="titleText" style="color: orangered">Our Expert Staff</h2>
+			<p style="color: black;">Meet our dedicated healthcare professionals who bring their expertise and passion to every patient.</p>
+		</div>
+		<div class="content">
+			<div class="box">
+				<div class="imgBx">
+					<img src="images/baker1.PNG" alt="">
+				</div>
+				<div class="text">
+					<h3>Matove Justine</h3>
+					<p>Manager</p>
+				</div>
+			</div>
+			<div class="box">
+				<div class="imgBx">
+					<img src="images/baker4.PNG" alt="">
+				</div>
+				<div class="text">
+					<h3>John Doe</h3>
+					<p>Head Baker</p>
+				</div>
+			</div>
+			<div class="box">
+				<div class="imgBx">
+					<img src="images/baker5.PNG" alt="">
+				</div>
+				<div class="text">
+					<h3>Atugonza patrik</h3>
+					<p>Pastry Chef</p>
+				</div>
+			</div>
+			<div class="box">
+				<div class="imgBx">
+					<img src="images/baker2.PNG" alt="">
+				</div>
+				<div class="text">
+					<h3>Kobusinge Lilian</h3>
+					<p>Cake Artist</p>
+					
+			</div>
+		</div>
+	</section>
+
+	<!-- Button to take back to home page -->
+
+	<button class="button" onclick="window.location.href='index.html'">Home</button>
+		
+	<!-- Button to take back to about page -->
+	<button class="button" onclick="window.location.href='about.html'">Top</button>
+
+	<section class="testimonials" id="testimonials">
+
+		<div class="title">
+			<h2 class="titleText">Testimonials</h2>
+			<p>Read what our customers have to say about us.</p>
+		</div>
+		<div class="content">
+				
+
+			<div class="box">
+				<div class="col-3">
+					
+				<img src="images/user-1.jpg" alt="" style="border-radius: 20px; width: 370px">
+                <h3>Katusiime Alen</h3>
+				<p style="color: white;">
+					"Kibimba Bakery never disappoints! Their cakes are always moist, fluffy, and full of flavor. I highly recommend them for all your special occasions."
+					
+				</p>
+				<i class="fa fa-quote-left" style="color: orange;"></i>
+						<div class="rating">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+					</div>
+
+			</div>
+		</div>
+
+			<div class="box">
+				<div class="col-3">
+					
+				<img src="images/user-2.jpg" alt="" style="border-radius: 20px; width: 370px">
+                <h3>Musinguzi Joel</h3>
+				<p style="color: white;">
+					"We love the variety of pastries offered by Kibimba Bakery. Always fresh and tasty!"
+					
+				</p>
+				<i class="fa fa-quote-left" style="color: orange;"></i>
+						<div class="rating">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+					</div>
+
+			</div>
+		</div>
+
+
+
+			<div class="box">
+				<div class="col-3">
+					
+				<img src="images/user-3.jpg" alt="" style="border-radius: 20px; width: 370px;">
+                <h3>Sarah Williams</h3>
+				<p style="color: white;">
+					"The pastries at Kibimba Bakery are heavenly. I can't resist their croissants and danishes. Truly a treat for the taste buds!"
+					
+				</p>
+				<i class="fa fa-quote-left" style="color: orange;"></i>
+						<div class="rating">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+					</div>
+
+			</div>
+		</div>
+	</section>
+
+	</div>
+
+	
+   <!--Footer-->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Location</h3>
+                <p>Kibimba Bakery, situated in Kibimba trading center 2km away from Fort Portal Tourism City in the North Division, has been serving the community since its commencement in 2016. </p>
+                
+            </div>
+            <div class="footer-col-2">
+                <img src="images/KBlogo.PNG" alt="">
+                <p>Our purpose to make you satisfied</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li> <a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="contact.html">contact us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#" target="_blank"><img src="images/icons8-facebook-45.png" alt=""></a></li>
+                    <li><a href="#" target="_blank"><img src="images/icons8-instagram-45.png" alt=""></a></li>
+                    <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="images/icons8-twitter-40.png" alt=""></a></li>
+                    <li><a href="#" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright-2024-Kibimba abkery All Rights Reserved</p>
+        <p>Designed by <a href="geobacodes24@gmail.com" style="color: blue;"> Geoffrey Birungi </a></p>
+     </div>
+</div>
+</body>
+<!--JavaScript-->
+<script src="script.js"></script>
+
+</html>

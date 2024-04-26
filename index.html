@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kibimba Bakery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="images/KBlogo.PNG" type="image/png">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"> <img src="images/KBlogo.PNG" alt="" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="menuitems" >
+                        <li style="color: white;"> <a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+
+                        <li class="has-submenu"><a href="about.html" onclick="toggleMenu()">About</a>
+                            <ul class="submenu">
+                                <li><a href="#menu" onclick="toggleMenu()">Menu</a></li>
+                                <li><a href="#expert" onclick="toggleMenu()">Expert</a></li>
+                                <li><a href="#testimonials" onclick="toggleMenu()">Testimonials</a></li>
+                                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="signin.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"> <img src="images/cart.png" alt="ye cart hai" height="30px" width="30px"></a>
+                <img src="images/menu.png" class="menu-icon" alt="" onclick="menutoggle()">
+            </div>
+
+
+
+
+
+
+            <style>
+                * {box-sizing: border-box;}
+                body {font-family: Verdana, sans-serif;}
+                .mySlides {display: none;}
+                img {vertical-align: middle;}
+                
+                /* Slideshow container */
+                .slideshow-container {
+                  max-width: 1300px;
+                  position: relative;
+                  margin: auto;
+           
+                }
+                
+                /* Caption text */
+                .text {
+                  color: #f2f2f2;
+                  font-size: 15px;
+                  padding: 8px 12px;
+                  position: absolute;
+                  bottom: 8px;
+                  width: 100%;
+                  text-align: center;
+                  margin-bottom: 20%;
+                }
+                
+                /* The dots/bullets/indicators */
+                .dot {
+                  height: 15px;
+                  width: 15px;
+                  margin: 0 2px;
+                  background-color: #bbb;
+                  border-radius: 50%;
+                  display: inline-block;
+                  transition: background-color 0.8s ease;
+                }
+                
+                .active {
+                  background-color: #717171;
+                }
+                
+                /* Fading animation */
+                .fade {
+                  animation-name: fade;
+                  animation-duration: 2.0s;
+                }
+                
+                @keyframes fade {
+                  from {opacity: .4} 
+                  to {opacity: 1}
+                }
+                
+                /* On smaller screens, decrease text size */
+                @media only screen and (max-width: 300px) {
+                  .text {font-size: 11px}
+                  
+
+                  
+                }
+                </style>
+                </head>
+                
+                <body>
+                    
+                <div class="slideshow-container">
+                
+                <div class="mySlides fade">
+                  <img src="images/customcakes2.PNG" style="width:100%; height: 500px;">
+                  <div class="text" style="color: white; font-size: 35px; font-family: Algerian; align-content: center;"> <b>WELCOME TO KIBIMBA BAKERY <br>TASTE THE MOST DELCIOUS BAKED FOOD</b></div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <img src="images/pumpkin bread3.PNG" style="width:100%; height: 500px;">
+                  <div class="text" style="color: white; font-size: 35px; font-family: Algerian; align-content: center;"><b >DISCOVER THE WORLD and ENJOY DELCIOUS BAKED PRODUCTS</b></div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <img src="images/baked products1.PNG" style="width:100%; height: 500px;">
+                  <div class="text" style="color: white; font-size: 35px; font-family: Algerian; align-content: center;"><b></b>Enjoy the sweetest baked products with an amazing aromma</div>
+                </div>
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                </div>
+                
+                <script>
+                let slideIndex = 0;
+                showSlides();
+                
+                function showSlides() {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("dot");
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  slideIndex++;
+                  if (slideIndex > slides.length) {slideIndex = 1}    
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                  setTimeout(showSlides, 5000); // Change image every 2 seconds
+                }
+                </script>
+                
+
+
+
+
+            <div class="row" id="myrow">
+                <div class="col-2">
+                    <h1>Welcome to Kibimba Bakery</h1>
+                    <p>Kibimba Bakery is located in Kibimba Center, just 2km away from Fortpotal Tourism City. We are dedicated to providing high-quality baked goods and excellent customer service.</p>
+                    <a href="products.html" class="btn">Explore Now &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="images/baked products1.PNG" alt="Bakery Image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured category-->
+
+    <div class="Categories">
+        <div class="small-container">
+            <h2 class="title">Enjoy the sweetest baked products with an amazing aromma</h2>
+            <div class="row">
+                <div class="col-3">
+                    <img src="images/2.PNG" alt="" style="height: 160px;">
+                </div>
+                <div class="col-3">
+                    <img src="images/5.PNG" alt=""  style="height: 160px;">
+                </div>
+                <div class="col-3">
+                    <img src="images/4.PNG" alt=""  style="height: 160px;">
+                </div>
+                <div class="col-3">
+                    <img src="images/7.PNG" alt=""  style="height: 160px;">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--Featured products-->
+
+    <div class="small-container">
+        <h2 class="title">Featured Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <a href="productDetail.html"> <img src="images/customcakes2.PNG" alt="" style="height: 200px;"> </a>
+                <a href="productDetail.html">
+                    <h4>custom cakes</h4>
+                </a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Ugshs 30,000 @</p>
+            </div>
+            <div class="col-4">
+                <a href="productDetail.html"> <img src="images/pumpkin bread3.PNG" alt="" style="height: 200px;"> </a>
+                <a href="productDetail.html">
+                    <h4>pumkin bread</h4>
+                </a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Ugshs 5,000 @</p>
+            </div>
+            <div class="col-4">
+                <a href="productDetail.html"> <img src="images/baked products1.PNG" alt=""  style="height: 200px;"> </a>
+                <a href="productDetail.html">
+                    <h4>pastories </h4>
+                </a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Ugshs 1000 @</p>
+            </div>
+            <div class="col-4">
+                <a href="productDetail.html"> <img src="images/custom cakes1.PNG" alt=""  style="height: 200px;"> </a>
+                <a href="productDetail.html">
+                    <h4>Birth day cakes </h4>
+                </a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>UgShs 30,000 @</p>
+            </div>
+
+        
+        </div>
+    </div>
+
+    <!--Offer-->
+
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/Irish Brown Bread.PNG" class="offer-img" alt="">
+                </div>
+                <div class="col-2">
+                    <p>Exclusively Available on Kibimba Bakery</p>
+                    <h1>Cheese Bread</h1>
+                    <small>Delicious and freshly baked cheese bread, made with love and the finest ingredients.</small>
+                    <a href="" class="btn">Buy Now &#8594;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <!--Testimonials-->
+<h2 style="text-align: center;">What our customers say about Kibimba Bakery products</h2>
+
+<div class="testimonials">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p>The bread from Kibimba Bakery is always fresh and delicious. It's a staple in our household!</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <img src="images/user-1.jpg" alt="" style="height: 400px;">
+                <h3>Emily Johnson</h3>
+            </div>
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p>We love the variety of pastries offered by Kibimba Bakery. Always fresh and tasty!</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <img src="images/user-2.jpg" alt=""style="height: 400px;">
+                <h3>Michael Brown</h3>
+            </div>
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p>Kibimba Bakery's cakes are simply amazing! They never fail to impress at our family gatherings.</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <img src="images/user-3.jpg" alt="" style="height: 400px;">
+                <h3>Sarah Williams</h3>
+            </div>
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p>Kibimba Bakery's cakes are simply amazing! They never fail to impress at our family gatherings.</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <img src="images/baker2.PNG" alt="" style="height: 400px;">
+                <h3>Kengonzi samantha</h3>
+            </div>
+
+            
+        </div>
+    </div>
+</div>
+
+
+   <!--Footer-->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Location</h3>
+                <p>Kibimba Bakery, situated in Kibimba trading center 2km away from Fort Portal Tourism City in the North Division, has been serving the community since its commencement in 2016. </p>
+                
+            </div>
+            <div class="footer-col-2">
+                <img src="images/KBlogo.PNG" alt="">
+                <p>Our purpose to make you satisfied</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li> <a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="contact.html">contact us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#" target="_blank"><img src="images/icons8-facebook-45.png" alt=""></a></li>
+                    <li><a href="#" target="_blank"><img src="images/icons8-instagram-45.png" alt=""></a></li>
+                    <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="images/icons8-twitter-40.png" alt=""></a></li>
+                    <li><a href="#" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright-2024-Kibimba abkery All Rights Reserved</p>
+        <p>Designed by <a href="geobacodes24@gmail.com" style="color: blue;"> Geoffrey Birungi </a></p>
+     </div>
+</div>
+</body>
+<!--JavaScript-->
+<script src="script.js"></script>
+
+</html>
